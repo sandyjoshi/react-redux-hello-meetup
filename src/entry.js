@@ -2,9 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import HelloMeetupApp from './components/helloMeetupApp';
 import rootReducer from './reducers/index';
-import {
-    createStore
-} from 'redux';
+import { createStore } from 'redux';
 
 const store = createStore(rootReducer);
 
