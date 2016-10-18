@@ -1,4 +1,4 @@
-# Hello World Application
+# Hello Meetup Application
 
 React+Redux+Webpack
 
