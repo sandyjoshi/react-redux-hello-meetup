@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Root from './containers/Root';
+import HelloMeetupApp from './components/helloMeetupApp';
 import rootReducer from './reducers/index';
 import {
-  createStore
+    createStore
 } from 'redux';
 
 const store = createStore(rootReducer);
 
 const node = (
-  <Root store={store} />
+    <HelloMeetupApp store={store}/>
 );
 
-ReactDOM.render(node, document.getElementById('app') );
+ReactDOM.render(node, document.getElementById('app'));
