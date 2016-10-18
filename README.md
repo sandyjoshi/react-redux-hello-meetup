@@ -1,11 +1,11 @@
-# Hello World Application
+# Hello Meetup Application
 
-React+Redux+Webpack Contact Manager demo app.
+React+Redux+Webpack
 
 ## To Run
 
 ```
-$ git clone https://github.com/sandyjoshi/react-webpack-heroku.git && cd react-webpack-heroku
+$ git clone https://github.com/sandyjoshi/react-redux-hello-meetup.git && cd react-redux-hello-meetup
 ```
 
 ## Installation
