@@ -33,10 +33,12 @@ export default class MainView extends React.Component {
     return(
       <div>
         <div> Welcome to the Java Meetup Group, Ahemadabad</div>
-        <div >{ this.props.wish.wish }</div>
-        <div><button onClick={this.wishMorning.bind(this)}>wish Morning</button></div>
-        <div><button onClick={this.wishNight.bind(this)}>wish Night</button></div>
-        <div><button onClick={this.resetWish.bind(this)}>Reset</button></div>
+        <h1 className="message" >{ this.props.wish.message }</h1>
+        <div>
+          <button onClick={this.wishMorning.bind(this)}>wish Morning</button>
+          <button onClick={this.wishNight.bind(this)}>wish Night</button>
+          <button onClick={this.resetWish.bind(this)}>Reset</button>
+        </div>
       </div>
     )
   }
