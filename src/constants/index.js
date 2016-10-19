@@ -1,6 +1,6 @@
-import { createConstants } from '../utils';
+import {createConstants} from '../utils';
 
 export default createConstants(
-  'WISH_BYE',
-  'UPDATE_WISH'
-  );
+    'WISH_BYE',
+    'UPDATE_WISH'
+);

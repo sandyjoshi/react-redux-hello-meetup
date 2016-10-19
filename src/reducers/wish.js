@@ -15,7 +15,7 @@ export default createReducer(initialWish, {
     },
 
     [constants.UPDATE_WISH]: (state, payload) => {
-        return Object.assign({}, state, { message : payload } );
+        return Object.assign({}, state, {message: payload});
     },
 
 });

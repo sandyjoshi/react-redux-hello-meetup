@@ -6,22 +6,22 @@ function updateWish(msg) {
         type: constants.UPDATE_WISH,
         payload: msg
     };
-};
+}
 
 function loadInitialMessage() {
     return function (dispatch) {
         axios.get('/api/message')
             .then(response => dispatch(updateWish(response.data.message)))
     }
-};
+}
 
 function saveMessage() {
     return function (dispatch, getState) {
         let message = getState().wish.message;
-        axios.post('/api/message', { message })
+        axios.post('/api/message', {message})
             .then(response => dispatch(updateWish(message)))
     }
-};
+}
 
 export default {
     wishBye() {
@@ -31,5 +31,5 @@ export default {
     },
     updateWish,
     loadInitialMessage,
-    saveMessage : saveMessage
+    saveMessage: saveMessage
 }
