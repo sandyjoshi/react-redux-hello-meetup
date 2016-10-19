@@ -1,4 +1,20 @@
 import constants from '../constants/';
+import axios from 'axios';
+
+export function updateWish(msg) {
+    return {
+        type: constants.UPDATE_WISH,
+        payload: msg
+    };
+}
+
+export function loadInitialMessageCall() {
+    return function (dispatch) {
+        axios.get('/api/message')
+            .then(response => dispatch(updateWish(response.data)))
+    }
+};
+
 
 export default {
     wishMorning(msg) {
@@ -17,5 +33,6 @@ export default {
         return {
             type: constants.RESET_WISH
         };
-    }
-};
+    },
+    loadInitialMessage : loadInitialMessageCall
+}

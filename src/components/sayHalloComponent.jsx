@@ -12,6 +12,11 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 export default class SayHalloComponent extends React.Component {
+
+    componentWillMount() {
+        this.props.actions.loadInitialMessage();
+    };
+
     render() {
         return (
             <div>

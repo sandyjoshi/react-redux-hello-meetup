@@ -11,10 +11,15 @@ app.use(express.static(static_path))
     res.sendFile('index.html', {
       root: static_path
     });
+  }).get('/api/message', function (req, res) {
+    res.setHeader("Content-Type", "text/json");
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.send({ message : "From AJAX Call" });
   }).listen(process.env.PORT || 9090, function (err) {
     if (err) { console.log(err) };
     console.log('Listening at localhost:9090');
   });
+
 
 if (isDevelopment) {
   var config = require('./webpack.config');
