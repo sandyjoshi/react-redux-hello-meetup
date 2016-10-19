@@ -5,19 +5,12 @@ import rootReducer from './reducers/index';
 import { createStore, applyMiddleware } from 'redux';
 import thunk                from 'redux-thunk';
 
+const middleware = applyMiddleware(thunk);
 
-
-  const middleware = applyMiddleware(thunk);
-
-  // const store = middleware(createStore)(
-  //   rootReducer
-  // );
-
-  const store = createStore(
+const store = createStore(
 	rootReducer,
 	middleware
-	);
-
+);
 
 const node = (
     <HelloMeetupApp store={store}/>
