@@ -1,11 +1,10 @@
 {
-  "name": "webpack-heroku-boilerplate",
+  "name": "react-redux-hello-meetup",
   "version": "1.0.0",
-  "description": "Heroku deployable boilerplate for React/Flux/Webpack apps.",
+  "description": "Simple demo application to learn React",
   "main": "./src/entry.js",
-  "homepage": "https://github.com/wallacyyy/webpack-heroku",
-  "author": "Leonardo Couto",
-  "license": "MIT",
+  "homepage": "https://github.com/sandyjoshi/react-redux-hello-meetup",
+  "author": "Sandeep Joshi",
   "scripts": {
     "postinstall": "webpack --config ./webpack-prod.config.js --progress --colors",
     "start": "node server.js",
@@ -14,14 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wallacyyy/webpack-heroku.git"
+    "url": "git+https://github.com/sandyjoshi/react-redux-hello-meetup.git"
   },
   "keywords": [
     "react",
-    "express",
+    "redux",
     "webpack",
     "es6",
-    "es7",
     "javascript"
   ],
   "dependencies": {
