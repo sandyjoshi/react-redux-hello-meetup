@@ -1,6 +1,7 @@
 import React                    from 'react';
 import {Provider}             from 'react-redux';
-import SayHalloComponent              from './sayHalloComponent';
+import routes               from '../routes';
+
 
 export default class HelloMeetupApp extends React.Component {
     static propTypes = {
@@ -10,7 +11,7 @@ export default class HelloMeetupApp extends React.Component {
     render() {
         return (
             <Provider store={this.props.store}>
-                <SayHalloComponent />
+                {routes}
             </Provider>
         );
     }
