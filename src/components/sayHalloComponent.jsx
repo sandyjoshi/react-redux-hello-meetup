@@ -15,8 +15,6 @@ export default class SayHalloComponent extends React.Component {
     render() {
         return (
             <div>
-                <a href="/#app/page2" > Go To Page 2 </a>
-
                 <div> Welcome to the Java Meetup Group, Ahemadabad</div>
                 <h1 className="message">{ this.props.wish.message }</h1>
                 <div>
