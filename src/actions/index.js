@@ -1,21 +1,17 @@
 import constants from '../constants/';
 
+function updateWish(msg) {
+    return {
+        type: constants.UPDATE_WISH,
+        payload: msg
+    };
+}
+
 export default {
-    wishMorning(msg) {
+    wishBye() {
         return {
-            type: constants.WISH_GOOD_MORNING,
-            payload: {msg}
+            type: constants.WISH_BYE
         };
     },
-    wishNight(msg) {
-        return {
-            type: constants.WISH_GOOD_NIGHT,
-            payload: {msg}
-        };
-    },
-    resetWish() {
-        return {
-            type: constants.RESET_WISH
-        };
-    }
-};
+    updateWish,
+}

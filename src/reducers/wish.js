@@ -8,22 +8,14 @@ const initialWish = {
 
 export default createReducer(initialWish, {
 
-    [constants.WISH_GOOD_MORNING]: (state, payload) => {
-        return Object.assign({}, state, {
-            message: payload.msg
-        });
+    [constants.WISH_BYE]: (state, payload) => {
+         return Object.assign({}, state, {
+            message: 'Good Bye!!'
+         });
     },
 
-    [constants.WISH_GOOD_NIGHT]: (state, payload) => {
-        return Object.assign({}, state, {
-            message: payload.msg
-        });
-    },
-
-    [constants.RESET_WISH]: (state, payload) => {
-        return Object.assign({}, state, {
-            message: 'Bye!'
-        });
+    [constants.UPDATE_WISH]: (state, payload) => {
+        return Object.assign({}, state, {message: payload});
     }
 
 });
