@@ -20,7 +20,7 @@ export default class SayHalloComponent extends React.Component {
                 <div>
                     <button onClick={()=>{this.props.actions.updateWish('Good Morning')}}>wish Morning</button>
                     <button onClick={()=>{this.props.actions.updateWish('Good Night')}}>wish Night</button>
-                    <button onClick={this.props.actions.wishBye}>Reset</button>
+                    <button onClick={this.props.actions.wishBye}>Bye</button>
                 </div>
                 <img src="http://photos1.meetupstatic.com/photos/event/5/0/f/c/highres_260900732.jpeg" />
             </div>

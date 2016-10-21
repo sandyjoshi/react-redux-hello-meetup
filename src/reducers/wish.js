@@ -3,7 +3,7 @@ import constants from '../constants/';
 
 const initialWish = {
     prefix: 'Good ',
-    message: 'Hello!'
+    message: 'Good Evening'
 };
 
 export default createReducer(initialWish, {
