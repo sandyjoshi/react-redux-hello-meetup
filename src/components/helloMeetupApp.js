@@ -1,6 +1,7 @@
 import React                    from 'react';
 import {Provider}             from 'react-redux';
-import SayHalloComponent              from './sayHalloComponent';
+import SayHalloComponent      from './sayHalloComponent';
+
 
 export default class HelloMeetupApp extends React.Component {
     static propTypes = {
