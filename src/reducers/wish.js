@@ -2,7 +2,7 @@ import {createReducer}     from '../utils';
 import constants from '../constants/';
 
 const initialWish = {
-    prefix: 'Good ',
+    prefix: 'This is prefix',
     message: 'Hello!'
 };
 
